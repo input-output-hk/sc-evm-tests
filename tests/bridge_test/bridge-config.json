@@ -1,0 +1,65 @@
+{
+    "bridge": {
+        "mainchain_network": "testnet-magic 1",
+        "mainchain_era": "babbage-era",
+        "mainchain_socket": "PATH/TO/node.socket",
+        "mc_bridge_contract_addr": "addr_test1...",
+        "mc_payment_addr_file": "PATH/TO/payment.addr",
+        "mc_payment_skey_file": "PATH/TO/payment.skey",
+        "mc_sc_token_addr_file": "PATH/TO/local_sc_token.addr",
+        "mc_sc_token_skey_file": "PATH/TO/local_sc_token.skey",
+        "mc_sc_token_policy_id": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.4655454c",
+        "generated_accounts_folder": "PATH",
+        "mc_stability_param": 36,
+        "sidechain_node1": "URL1",
+        "sidechain_node2": "URL2",
+        "sc_stability_param_k": 15,
+        "sc_payment_addr_file": "PATH/TO/local_sidechain_account",
+        "sc_payment_key_file": "PATH/TO/local_sidechain_private_key",
+        "sc_genesis_file": "PATH/TO/genesis.json",
+        "sc_evm_cli": "PATH/TO/binary",
+        "total_balance": 100000000000000000000000000,
+        "db_path": "PATH/TO/soak-tests.db"
+    },
+    "CTL": {
+        "trustless_ctl_cli": "PATH/TO/binary",
+        "sidechainParameters": {
+            "chainId": 79,
+            "genesisHash": "The hash of the genesis file of the sidechain",
+            "genesisMint": null,
+            "genesisUtxo": "TxHash#TxIx",
+            "threshold": {
+                "numerator": 2,
+                "denominator": 3
+            }
+        },
+        "registration1": {
+            "spo-signing-key": "PATH/TO/SPO1/cold.skey",
+            "spo-public-key": "PATH/TO/SPO1/cold.vkey",
+            "sidechain-signing-key": "<Redacted>"
+        },
+        "registration2": {
+            "spo-signing-key": "PATH/TO/SPO2/cold.skey",
+            "spo-public-key": "PATH/TO/SPO2/cold.vkey",
+            "sidechain-signing-key": "<Redacted>"
+        },
+        "registration3": {
+            "spo-signing-key": "PATH/TO/SPO3/cold.skey",
+            "spo-public-key": "PATH/TO/SPO3/cold.vkey",
+            "sidechain-signing-key": "<Redacted>"
+        },
+        "registration4": {
+            "spo-signing-key": "PATH/TO/SPO4/cold.skey",
+            "spo-public-key": "PATH/TO/SPO4/cold.vkey",
+            "sidechain-signing-key": "<Redacted>"
+        }
+    },
+    "db-sync": {
+        "db_host": "<IP or URL>",
+        "db_port": 5432,
+        "db_name": "cexplorer",
+        "db_user": "<Redacted>",
+        "db_pass": "<Redacted>",
+        "psql_path": "PATH/TO/psql"
+    }
+}

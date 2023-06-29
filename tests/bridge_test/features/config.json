@@ -1,0 +1,32 @@
+{
+  "sidechainParameters": {
+    "chainId": null,
+    "genesisHash": null,
+    "genesisMint": null,
+    "genesisUtxo": null,
+    "threshold": null
+  },
+  "runtimeConfig": {
+    "network": "testnet",
+    "ogmios": {
+      "host": "<URL>",
+      "port": 443,
+      "path": null,
+      "secure": true
+    },
+    "ogmiosDatumCache": {
+      "host": "<URL>",
+      "port": 443,
+      "path": null,
+      "secure": true
+    },
+    "ctlServer": {
+      "host": "<URL>",
+      "port": 443,
+      "path": null,
+      "secure": true
+    }
+  },
+  "paymentSigningKeyFile": null,
+  "stakeSigningKeyFile": null
+}
